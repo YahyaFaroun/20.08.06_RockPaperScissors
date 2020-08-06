@@ -1,0 +1,157 @@
+
+body{
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+article:not(:last-of-type){
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    margin: 10px auto;
+}
+h1{
+    color: white;
+    font-size: 2.2em;
+}
+h2{
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+
+article:first-of-type{
+    height: 30vh;
+    padding: 10px;
+}
+article:first-of-type h2{
+    margin-bottom: 5vh;
+}
+#displayRounds{
+    /* transform: translateX(-5000px); */
+    display: flex;
+    margin-bottom: 5vh;
+    justify-content: start;
+}
+label{
+    font-size: 1.4em;
+}
+#displayRounds div{
+    padding: 10px;
+}
+#five, #ten, #fiften, #twentey{
+    text-align: left;
+}
+input[type="radio"]{
+    margin-left: 60px;
+    margin-top: 7px;
+}
+
+/*Rounds Ausgeblendet */
+#displayRoundsStatus{
+    display: none;
+    font-size: 5em;
+}
+
+
+
+/*Bunte Boxen Comp & Player*/
+/* article:nth-of-type(2) > div:only-child{
+    height: 10vh;
+    display: flex;
+    background-color: red;
+    font-size: 1.4em;
+    text-align: center;
+} */
+article:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+#playerBoxColor, #compBoxColor{
+    font-size: 1.6em;
+    padding: 5px 10px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+}
+#playerBoxColor{
+    transform: translateX(-50%);
+}
+#compBoxColor{
+    transform: translateX(50%);
+}
+#ergebnisText{
+    font-size: 1.4em;
+}
+#ergebnisText span{
+    font-size: .6em;
+    color: silver;
+}
+article:nth-of-type(2) div{
+    margin-top: 2vh;
+    font-size: 3em;
+}
+article button{
+    background-color: gold;
+    border-radius: 50%;
+    border: 1px solid silver;
+    padding: 10px; 
+}
+.choice{
+    display: inline-block;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin: auto 10px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+img{
+    color: silver;
+}
+img:hover{
+    transform: scale(1.2);
+}
+a{
+    font-family: 'Source Code Pro', monospace;
+    color: #ffcc99;
+    width: 100px;
+    margin: auto;
+}
+a:hover {
+    color: #ffba76;
+}
+.result {
+    font-weight: 300;
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+}
+#round-status{
+    display: none;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 40px 0;
+}
+
+
+.drawStyles {
+    border: 3px solid #444;
+    background-color: #222;
+    box-shadow: 0 0 20px #222;
+}

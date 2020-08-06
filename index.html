@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock - Paper - Scissors</h1>
+    <article>
+        <h2>how many rounds?</h2>
+        <div id="displayRounds">
+            <div>
+                <div>
+                    <input type="radio" name="rounds" id="five" onclick="getRounds()" checked>
+                    <label for="five">5</label>  
+                </div>
+                <div>
+                    <input type="radio" name="rounds" id="ten" onclick="getRounds()">
+                    <label for="ten">10</label>
+                </div> 
+            </div>
+            <div>
+                <div>
+                    <input type="radio" name="rounds" id="fiften" onclick="getRounds()">
+                    <label for="">15</label>
+                </div>
+                <div>
+                    <input type="radio" name="rounds" id="twenty" onclick="getRounds()">
+                    <label for="">20</label>
+                </div>   
+            </div>
+        </div>
+        <div id="displayRoundsStatus"></div>
+    </article>     
+
+    <article>
+        <div id="playerBoxColor">USER</div>
+        <div id="ergebnisSpiel">0:0</div>
+        <div id="compBoxColor">COMP</div>
+    </article>
+
+    <article>
+        <h5 id="ergebnisText">Lets Play</h5>
+        <P id="winLooseMessage">MAKE YOUR MOVE</P>
+        <input type="image" class="choice" src="img/rock2.png" alt="" onclick="rock()" id="rockButton">
+        <input type="image" class="choice" src="img/hand.png" alt="" onclick="paper()" id="paperButton">
+        <input type="image" class="choice" src="img/scissors.png" alt="" onclick="scissors()" id="scissorsButton">
+    </article>
+
+    <a href="#" id="restartButton" onclick="restart()">Restart</a>
+    <script src="main.js"></script>
+</body>
+
+
+</html>
